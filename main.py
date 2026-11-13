@@ -1,4 +1,4 @@
-print("=== CONVERSOR DE KM PARA MILHAS ===")
-km = float(input("Distância em km: "))
-milhas = km / 1.609
-print(f"{km} km = {milhas:.2f} milhas")
+print("=== CONVERSOR DE KB PARA MB ===")
+kb = int(input("Distância em km: "))
+mb = kb / 1024
+print(f"{kb} kb = {mb:.2f} mb")
