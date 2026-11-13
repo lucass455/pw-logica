@@ -1,5 +1,6 @@
-print("Vamos conectar temperatura?")
-print("=== CONVERSOR DE TEMPERATURA ===")
-celsius = float(input("Temperatura em celsius: "))
-fahrenheit = (celsius * 9/5) + 32
-print(f"{celsius}°C = {fahrenheit: .1f}°F")
+valor = 15.6789
+
+print(f"{valor}")
+print(f"{valor:.1f}")
+print(f"{valor:.2f}")
+print(f"{valor:.3f}")
