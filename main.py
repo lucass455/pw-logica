@@ -1,15 +1,13 @@
-#EXERCICIO 4
+#EXERCICIO 5
 
-num = int(input("Digite um número: "))
-soma = 0
-contador = 1
+senha = "lucas12345"
 
-if num > 0:
+while True:
+    tentativa = input("Digite a senha: ")
+    
+    if tentativa == senha:
+        print("Acesso permitido!")
+        break
 
-    for i in range(0, num):
-        soma += contador
-        contador += 1
-    print(soma)
-
-else:
-    print("digite um numero positivo")
+    else:
+        print("senha incorreta, tente novamente")
