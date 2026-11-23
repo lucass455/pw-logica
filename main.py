@@ -1,17 +1,12 @@
-#EXERCICIO 6
+#EXERCICIO 7
 
-senha = "lucas12345"
-contagem_T = 0
+numero = int(input("Digite o número de notas: "))
+soma = 0
 
-while True:
-    tentativa = input("Digite a senha: ")
-    
-    if tentativa == senha:
-        print("Bem-vindo!")
-        break
+for i in range(0, numero):
+    nota = float(input("Digite a nota: "))
+    soma += nota
 
-    else:
-        print("senha incorreta, tente novamente")
-        contagem_T += 1
-        if contagem_T == 3:
-            print("Conta bloqueada")
+media = soma / numero
+
+print(f"Sua média é: {media:.2f}")
