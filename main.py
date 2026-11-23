@@ -1,12 +1,14 @@
-#EXERCICIO 7
+#EXERCICIO 8
 
-numero = int(input("Digite o número de notas: "))
-soma = 0
 
-for i in range(0, numero):
-    nota = float(input("Digite a nota: "))
-    soma += nota
+while True:
 
-media = soma / numero
+    numero = int(input("Digite um numero entre 1 e 10: "))
 
-print(f"Sua média é: {media:.2f}")
+    if 1 <= numero <= 10:
+        print("Número aceito!")
+        break
+
+    else:
+        print("O número precisa estar entre 1 e 10!")
+
