@@ -1,19 +1,25 @@
-#EXERCICIO 10
+#EXERCICIO 11
+
+numero = int(input("Digite um numero positivo: "))
+pares = 0
+impares = 0
+
+if numero >= 1:
+    
+
+    for i in range(0, numero):
+        if i % 2 == 0:
+            pares += 1
+
+        else:
+            impares += 1
 
 
-soma = 0
+else:
+    print("Digite um numero positivo")
 
-while True:
-    print("Digite '1' para digitar o preço de um produto, '0' para encerrar")
 
-    op = input("Digite uma opção: ")
+print(f"pares: {pares}")
+print(f"impares: {impares}")
 
-    if op == "1":
-        print("ADICIONAR PREÇO")
-        preco = float(input("Digite o preço do produto que quer adicionar: "))
-        soma = soma + preco
-
-    elif op == "0":
-        print(f"a soma total dos preços é: {soma:.2f}")
-        break
 
