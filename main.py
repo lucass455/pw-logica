@@ -1,24 +1,19 @@
-#EXERCICIO 9
+#EXERCICIO 10
 
-import random
 
-print("=== JOGO DE ADVINHAÇÃO ===")
-
-numero = random.randint(1, 20)
+soma = 0
 
 while True:
+    print("Digite '1' para digitar o preço de um produto, '0' para encerrar")
 
-    tentativa = int(input("Tente acertar o número: "))
+    op = input("Digite uma opção: ")
 
-    if tentativa < numero:
-        print("O número secreto é MAIOR!")
+    if op == "1":
+        print("ADICIONAR PREÇO")
+        preco = float(input("Digite o preço do produto que quer adicionar: "))
+        soma = soma + preco
 
-
-    elif tentativa > numero:
-        print("O número secreto é MENOR!")
-
-    
-    elif tentativa == numero:
-        print("Parabéns! Você acertou o numero!!!!!!!!!!!!!!")
+    elif op == "0":
+        print(f"a soma total dos preços é: {soma:.2f}")
         break
 
