@@ -1,6 +1,8 @@
-for i in range (0, 5):
-    print("Hello world!")
-        
+while True:
+    idade = int(input("Digite sua idade: "))
 
+    if idade > 0:
+        break
+    print("Idade inválida! Tente novamente.")
 
-
+print("Idade registrada!")
