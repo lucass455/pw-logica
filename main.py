@@ -1,14 +1,24 @@
-#EXERCICIO 8
+#EXERCICIO 9
 
+import random
+
+print("=== JOGO DE ADVINHAÇÃO ===")
+
+numero = random.randint(1, 20)
 
 while True:
 
-    numero = int(input("Digite um numero entre 1 e 10: "))
+    tentativa = int(input("Tente acertar o número: "))
 
-    if 1 <= numero <= 10:
-        print("Número aceito!")
+    if tentativa < numero:
+        print("O número secreto é MAIOR!")
+
+
+    elif tentativa > numero:
+        print("O número secreto é MENOR!")
+
+    
+    elif tentativa == numero:
+        print("Parabéns! Você acertou o numero!!!!!!!!!!!!!!")
         break
-
-    else:
-        print("O número precisa estar entre 1 e 10!")
 
