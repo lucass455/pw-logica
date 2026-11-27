@@ -1,30 +1,21 @@
-#EXERCICIO 4
+#EXERCICIO 5
 
-notas = []
+numeros = []
+pares = 0
+impares = 0
 
-soma = 0
+for i in range(10):
+    num = int(input("Digite um numero: "))
+    numeros.append(num)
 
-for i in range(5):
-    nota = float(input("Digite uma nota: "))
-    notas.append(nota)
+for i in numeros:
+    if i % 2 == 0:
+        print(f"O numero {i} é par")
+        pares += 1
+    
+    else:
+        print(f"O numero {i} é ímpar")
+        impares += 1
 
-print(f"As notas são: {notas}")
-
-for nota in notas:
-    soma = soma + nota
-
-print(f"A soma das notas é: {soma:.1f}")
-
-media = soma / 5
-
-print(f"A média das notas é: {media:.2f}")
-
-maior = max(notas)
-
-print(f"A maior nota é: {maior}")
-
-menor = min(notas)
-
-print(f"A menor nota é: {menor}")
-
-
+print(f"A quantidade de números pares é: {pares}")
+print(f"A quantidade de números ímpares é: {impares}")
