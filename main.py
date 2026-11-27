@@ -1,21 +1,23 @@
-#EXERCICIO 5
+#EXERCICIO 6
 
-numeros = []
-pares = 0
-impares = 0
+encontrado = False
 
-for i in range(10):
-    num = int(input("Digite um numero: "))
-    numeros.append(num)
+produtos = ["Mouse", "Teclado", "Monitor", "Headset", "Webcam"]
+print(produtos)
 
-for i in numeros:
-    if i % 2 == 0:
-        print(f"O numero {i} é par")
-        pares += 1
-    
+
+while encontrado == False:
+
+    remover = input("Digite um produto para remover: ")
+
+    if remover in produtos:
+        produtos.remove(remover)
+        print("Produto removido!")
+        encontrado = True
+
     else:
-        print(f"O numero {i} é ímpar")
-        impares += 1
+        print("Produto não encontrado")
 
-print(f"A quantidade de números pares é: {pares}")
-print(f"A quantidade de números ímpares é: {impares}")
+
+
+print(produtos)
