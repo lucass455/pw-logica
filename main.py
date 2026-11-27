@@ -1,8 +1,13 @@
-#EXERCICIO 1
+#EXERCICIO 2
 
-filmes = ["Forrest Gump", "O show de Truman", "Homem-aranha", "Corra","REC"]
+lista = ["arroz", "carne", "detergente"]
+print(lista)
 
-print(filmes)
-print(filmes[0])
-print(filmes[4])
-print(len(filmes))
+lista.append("suco de uva")
+lista.append("água")
+
+print("Itens adicionados: 2")
+
+print(lista)
+
+print(f"Número total de itens: {len(lista)}")
