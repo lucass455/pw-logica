@@ -1,13 +1,8 @@
-#EXERCICIO 2
+#EXERCICIO 3
 
-lista = ["arroz", "carne", "detergente"]
-print(lista)
+alunos = ["Lucas", "Otho", "Arthur", "Murilo", "Eduardo"]
+ind = 1
 
-lista.append("suco de uva")
-lista.append("água")
-
-print("Itens adicionados: 2")
-
-print(lista)
-
-print(f"Número total de itens: {len(lista)}")
+for aluno in alunos:
+    print(f"Aluno {ind}: {aluno}")
+    ind += 1
