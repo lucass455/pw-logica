@@ -1,46 +1,34 @@
-#EXERCICIO 7
+#EXERCICIO 8
 
-op = ""
+preco = 1
 
-lista_alunos = []
+lista_precos = []
 
-while op != "5":
-    print("=== CADASTRO DE ALUNOS ===")
-    print("1 - Cadastrar aluno")
-    print("2 - Listar alunos")
-    print("3 - Remover aluno")
-    print("4 - Quantodade de alunos")
-    print("5 - Sair")
+ind = 0
 
-    op = input("Digite uma opção: ")
+while preco != 0.0:
+    preco = float(input("Digite um preço para adicionar, digite '0' caso queira parar: "))
+    lista_precos.append(preco)
+    ind += 1
 
-    if op == "1":
-        print("CADASTRAR ALUNO")
-        adicionar_aluno = input("Digite o nome de um aluno para cadastrar: ")
-        lista_alunos.append(adicionar_aluno)
-        print("Aluno cadastrado!")
+lista_precos.remove(0.0)
 
-    elif op == "2":
-        print("LISTAGEM DE ALUNOS")
-        ind = 1
-        for i in lista_alunos:
-            print(f"Aluno {ind}: {i}")
-            ind += 1
+print(lista_precos)
 
-    elif op == "3":
-        print("REMOVER ALUNO")
-        remover_aluno = input("Digite o nome do aluno que quer remover: ")
-        lista_alunos.remove(remover_aluno)
-        print("Aluno removido!")
-        
-    elif op == "4":
-        print("QUANTIDADE DE ALUNOS")
-        print(f"O número de alunos é: {len(lista_alunos)}")
+soma = 0
 
-    elif op == "5":
-        print("SAINDO...")
-        break
+for i in lista_precos:
+    soma = soma + i
 
-    else:
-        print("Digite uma opção válida!")
+print(f"O total da compra é: {soma}")
+
+print(f"O total de itens é: {ind - 1}")
+
+media = soma / ind
+
+
+print(f"O preço médio é: {media}")
+
+    
+
 
