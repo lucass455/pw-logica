@@ -1,34 +1,39 @@
-#EXERCICIO 8
+#Desafio extra
 
-preco = 1
+aluno = ""
 
-lista_precos = []
+nota = 0
 
-ind = 0
+lista = []
 
-while preco != 0.0:
-    preco = float(input("Digite um preço para adicionar, digite '0' caso queira parar: "))
-    lista_precos.append(preco)
-    ind += 1
+conjunto = (aluno, nota)
 
-lista_precos.remove(0.0)
+ind = 1
 
-print(lista_precos)
+while aluno != "0":
+    print("Cadastro de alunos! Digite '0' para encerrar")
 
-soma = 0
+    aluno = input("Digite o nome de um aluno: ")
 
-for i in lista_precos:
-    soma = soma + i
+    nota = float(input("Digite a nota desse aluno: "))
+    conjunto = (aluno, nota)
+    lista.append(conjunto)
 
-print(f"O total da compra é: {soma}")
+lista.remove(lista[-1])
 
-print(f"O total de itens é: {ind - 1}")
+for i in lista:
+    if i[1] >= 7:
+        print(f"Aluno {ind} ({i[0]}) tirou a nota: {i[1]}... Situação: APROVADO :)")
+        ind += 1
 
-media = soma / ind
+    else:
+        print(f"Aluno {ind} ({i[0]}) tirou a nota: {i[1]}... Situação: REAPROVADO :(")
+        ind += 1
 
 
-print(f"O preço médio é: {media}")
 
-    
+
+
+
 
 
